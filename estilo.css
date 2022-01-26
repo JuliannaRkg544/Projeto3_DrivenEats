@@ -1,6 +1,38 @@
 *{
     box-sizing: border-box;
 }
-.body{
-    background-color: aliceblue;
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Righteous', cursive;  */ 
+body{
+    background-color: #e5e5e5;
 }
+
+header{
+    background-color: #CF2B2B;
+    height: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.topo{
+    margin: 18px;
+    
+
+}
+
+.topo h1{
+    
+    font-weight: 400;
+    font-size: 44px;
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+}
+
+.topo p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 5px;
+}
+
