@@ -13,10 +13,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+     position: fixed;
+    top: 0;
+    width: 100vw;
 }
 .topo{
     margin: 18px;
-    
 
 }
 
@@ -35,4 +37,60 @@ header{
     color: #FFFFFF;
     margin: 5px;
 }
+.alimento p{
+    font-size: 26px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    margin: 20px;
+    color: #333333;
+    
+}
+nav{
+    display: flex;
+    overflow-x:scroll;
+    margin-left: 15px;
+}
+.alimento{
+    margin-top: 92px;
+}
+.alimento_opcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 172px;
+    height: 216px;
+    margin-left: 18px;
+    margin-top: 17px;
+    font-family:'Roboto', sans-serif;
+    border: solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.alimento_opcao img{
+    Width: 144px;
+    Height: 87px;
+}
+.alimento_opcao h3{
+   
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    margin: 5px 15px;
+}
+.alimento_opcao h4{
+    font-size: 15px;
+    font-weight: 300;
+    color: #a6a6a6;
+    margin: 5px 15px ;
+    
+}
+.alimento_opcao h5{
+   
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin: 5px 15px;
+}
+
 
