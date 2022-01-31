@@ -10,7 +10,8 @@ function botao(){
         document.getElementById("desabilitado").style.display="none";
         document.getElementById("habilitado").style.display="block";
 
-        precoTotal = parseFloat(comida) + parseFloat(bebida) + parseFloat(sobremesa);
+        precoTotal = parseFloat(precoComida) + parseFloat(precoBebida) + parseFloat(precoSobremesa);
+       
     }
 
 }
@@ -26,7 +27,7 @@ function coxinha(){
     document.getElementById("sanduba_icon").style.display = "none";
     
     comida = "coxinha";
-    preco ="5.50";
+    precoComida ="5.50";
 
     botao()
 }
@@ -41,7 +42,7 @@ function quiabo(){
     document.getElementById("sanduba_icon").style.display = "none";
     
     comida = "quiabo";
-    preco ="8.90";
+    precoComida ="8.90";
 
     botao()
 }
@@ -57,7 +58,7 @@ function sanduba(){
     document.getElementById("sanduba_icon").style.display = "block";
     
     comida = "sanduba";
-    preco ="10.40";
+    precoComida ="10.40";
 
     botao()
 }
@@ -73,7 +74,7 @@ function suco(){
     document.getElementById("mate_icon").style.display = "none";
     
     bebida = "suco";
-    preco ="8.90";
+    precoBebida ="8.90";
 
     botao()
 }
@@ -88,7 +89,7 @@ function mate(){
     document.getElementById("mate_icon").style.display = "block";
     
     bebida = "mate";
-    preco ="7.90";
+    precoBebida ="7.90";
 
     botao()
 }
@@ -103,7 +104,7 @@ function acai(){
     document.getElementById("mate_icon").style.display = "none";
     
     bebida = "acai";
-    preco ="12.80";
+    precoBebida ="12.80";
 
     botao()
 }
@@ -118,7 +119,7 @@ function mousse(){
     document.getElementById("maracuja_icon").style.display = "none";
     
     sobremesa = "mousse";
-    preco ="6.50";
+    precoSobremesa ="6.50";
 
     botao()
 }
@@ -133,7 +134,7 @@ function brownie(){
     document.getElementById("maracuja_icon").style.display = "none";
     
     sobremesa = "brownie";
-    preco ="14.84";
+    precoSobremesa ="14.84";
 
     botao()
 }
@@ -148,7 +149,7 @@ function maracuja(){
     document.getElementById("maracuja_icon").style.display = "block";
     
     sobremesa = "maracuja";
-    preco ="6.50";
+    precoSobremesa ="6.50";
 
     botao()
 }
@@ -158,7 +159,7 @@ function finalizarPedido() {
       "Olá, gostaria de fazer o pedido:" + "\n" +  " - Prato: " +
       comida + "\n" + " - Bebida: " + bebida +  "\n" +
       " - Sobremesa: " + sobremesa + "\n" +
-      "Total: R$ " + precoTotal + "\n \n" + "Nome: " 
+      "Total: R$ " + precoTotal + "\n" 
     window.open(
       "https://wa.me/5522999279652?text=" + encodeURIComponent(mensagem_wpp)
     );}
